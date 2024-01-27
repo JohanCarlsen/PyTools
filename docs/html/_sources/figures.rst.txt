@@ -1,0 +1,8 @@
+Figure configuration 
+====================
+
+pytools.figures
+---------------
+
+.. automodule:: figures 
+    :members:
