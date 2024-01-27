@@ -1,7 +1,9 @@
 # PyTools
 Helpful stuff for coding with `python`.
 
-# Usage
+* **Documentation:** https://johancarlsen.github.io/PyTools/html/index.html
+
+# Installing
 1. Clone the repository
 ```
 git clone git@github.com:JohanCarlsen/PyTools.git
