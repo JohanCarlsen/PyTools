@@ -20,3 +20,23 @@ Installation
 .. code-block:: console 
 
     pip install -e . 
+
+.. note::
+
+    For :code:`pylance` to be able to resolve the package, installing
+    with
+    
+    .. code-block:: console 
+
+        pip install -e . --config-settings editable_mode=compat
+
+    ensures this.
+
+Import package
+--------------
+
+To import :code:`pytools` to your :code:`python` project:
+
+.. code-block:: python
+
+    import pytools
