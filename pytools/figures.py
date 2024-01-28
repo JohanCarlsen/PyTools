@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import pytools
+
 def set_size(width: str='col', scale: float=1.0,
              subplot: tuple=(1, 1)) -> tuple:
     r'''
@@ -46,3 +49,23 @@ def set_size(width: str='col', scale: float=1.0,
     fig_dims = (fig_width, fig_height)
 
     return fig_dims
+
+def set_style(style_name: str='article_style'):
+    r'''
+    Set the global style for :code:`matplotlib.pyplot`.
+
+    Parameters
+    ----------
+    style_name : {'article_style'}
+        Which style to use. Currently 'article_style' is the only
+        available style.
+
+    Raises
+    ------
+    AttributeError
+        If `style_name` is not 'article_style'.
+    '''
+    if not style_name == 'article_style':
+        raise ValueError("Currently only 'article_style' is available.")
+    
+    plt.style.use('pytools.styles.' + style_name)
