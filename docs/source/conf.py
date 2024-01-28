@@ -8,6 +8,7 @@
 import sys 
 import os
 
+sys.path.insert(0, os.path.abspath('../..')) # Add here any underlying folders!
 sys.path.insert(0, os.path.abspath('../../pytools')) # Add here any underlying folders!
 
 project = 'PyTools'
